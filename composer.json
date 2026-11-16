@@ -1,0 +1,16 @@
+{
+    "name": "ktulchu/yii2-sef-router",
+    "description": "Database-backed SEO routing for Yii2 with automatic ActiveRecord URL synchronization",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "url", "routing", "seo", "slug", "behavior"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0",
+        "yiisoft/yii2": "^2.0.50"
+    },
+    "autoload": {
+        "psr-4": {
+            "rkdev\\sef\\": "src/"
+        }
+    }
+}
