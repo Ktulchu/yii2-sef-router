@@ -170,7 +170,7 @@ try {
     throw new RuntimeException('FAIL: invalid path did not throw');
 } catch (\yii\base\InvalidConfigException $expected) {
 }
-check(DemoPost::find()->where(['title' => 'Bad URL'])->count() === 0, 'Invalid URL rolls back insert');
+check((int) DemoPost::find()->where(['title' => 'Bad URL'])->count() === 0, 'Invalid URL rolls back insert');
 
 $migration->safeDown();
 
